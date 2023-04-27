@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="DetailCell" customModule="MovieApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="319" height="88"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="319" height="88"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XzA-GF-ha7">
+                        <rect key="frame" x="0.0" y="0.0" width="120" height="88"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="D3Z-ZX-z2A"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TTS-pK-FNJ">
+                        <rect key="frame" x="136" y="0.0" width="183" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fd6-k7-qkQ">
+                        <rect key="frame" x="136" y="33" width="183" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="roa-uf-ttD">
+                        <rect key="frame" x="136" y="66" width="183" height="20.333333333333329"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="Fd6-k7-qkQ" firstAttribute="top" secondItem="TTS-pK-FNJ" secondAttribute="bottom" constant="12" id="FV4-zN-UQI"/>
+                <constraint firstItem="roa-uf-ttD" firstAttribute="trailing" secondItem="Fd6-k7-qkQ" secondAttribute="trailing" id="IJv-DB-fpn"/>
+                <constraint firstItem="XzA-GF-ha7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="O16-Ha-BBz"/>
+                <constraint firstAttribute="trailing" secondItem="TTS-pK-FNJ" secondAttribute="trailing" id="W0s-8O-KaV"/>
+                <constraint firstItem="roa-uf-ttD" firstAttribute="leading" secondItem="Fd6-k7-qkQ" secondAttribute="leading" id="ZPm-2h-Tnb"/>
+                <constraint firstItem="TTS-pK-FNJ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="iAw-6h-KTc"/>
+                <constraint firstItem="TTS-pK-FNJ" firstAttribute="leading" secondItem="XzA-GF-ha7" secondAttribute="trailing" constant="16" id="j0F-UY-1Qc"/>
+                <constraint firstAttribute="bottom" secondItem="XzA-GF-ha7" secondAttribute="bottom" id="mBg-dw-fJC"/>
+                <constraint firstItem="Fd6-k7-qkQ" firstAttribute="trailing" secondItem="TTS-pK-FNJ" secondAttribute="trailing" id="mT1-hf-KG1"/>
+                <constraint firstItem="Fd6-k7-qkQ" firstAttribute="leading" secondItem="TTS-pK-FNJ" secondAttribute="leading" id="oWc-9U-GSq"/>
+                <constraint firstItem="roa-uf-ttD" firstAttribute="top" secondItem="Fd6-k7-qkQ" secondAttribute="bottom" constant="12" id="tkT-Kl-Fkd"/>
+                <constraint firstItem="XzA-GF-ha7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ygp-FL-ySQ"/>
+            </constraints>
+            <size key="customSize" width="319" height="88"/>
+            <connections>
+                <outlet property="imageMovie" destination="XzA-GF-ha7" id="lM5-N9-VGo"/>
+                <outlet property="ratingLabel" destination="Fd6-k7-qkQ" id="ift-3d-zTf"/>
+                <outlet property="storyLabel" destination="TTS-pK-FNJ" id="ddW-Wv-x81"/>
+                <outlet property="timeLabel" destination="roa-uf-ttD" id="Mv8-39-adx"/>
+            </connections>
+            <point key="canvasLocation" x="159.54198473282443" y="-8.4507042253521139"/>
+        </collectionViewCell>
+    </objects>
+</document>
