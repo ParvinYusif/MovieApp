@@ -20,6 +20,10 @@ class HomeController: UIViewController {
         collection.showsVerticalScrollIndicator = false
         title = "Movie"
         configViewModel()
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         configueUI()
     }
     
@@ -40,6 +44,7 @@ class HomeController: UIViewController {
         }
         
     }
+    
     func showAlert(title: String, message: String, buttonText: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title: buttonText, style: .default, handler: nil)
@@ -48,8 +53,12 @@ class HomeController: UIViewController {
     }
     
     func configueUI() {
-//        navigationItem.title = NSLocalizedString("home_title", comment: "")
-        titleLabel.text = NSLocalizedString("home_title", comment: "")
+        let lang = UserDefaults.standard.string(forKey: "applang")
+        let path = Bundle.main.path(forResource: lang, ofType: "lproj") ?? ""
+        let bundle = Bundle(path: path) ?? Bundle()
+        titleLabel.text = "home_title".localize
+        collection.reloadData()
+//        titleLabel.text = NSLocalizedString("home_title", comment: "")
     }
     
     

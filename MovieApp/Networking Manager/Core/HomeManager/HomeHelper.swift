@@ -8,7 +8,7 @@
 import Foundation
 
 enum HomeCategory: String {
-    case popular = "Popular"
+    case popular = "home_category_popular"
     case topRated = "Top Rated"
     case upcoming = "Upcoming"
     case nowPlaying = "Now Playing"
