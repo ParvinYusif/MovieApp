@@ -117,10 +117,10 @@
             </objects>
             <point key="canvasLocation" x="3397.709923664122" y="1074.6478873239437"/>
         </scene>
-        <!--View Controller-->
+        <!--Language Controller-->
         <scene sceneID="xmO-pC-t7H">
             <objects>
-                <viewController id="Q0X-9x-xVw" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LanguageController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Q0X-9x-xVw" customClass="LanguageController" customModule="MovieApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7cy-D6-FJ2">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -131,33 +131,54 @@
                                     <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Pd-e8-3Wd">
                                         <rect key="frame" x="0.0" y="0.0" width="361" height="48.666666666666664"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="English"/>
+                                        <connections>
+                                            <action selector="enButton:" destination="Q0X-9x-xVw" eventType="touchUpInside" id="WXs-Bt-3fM"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C38-eq-w8K">
                                         <rect key="frame" x="0.0" y="98.666666666666657" width="361" height="48.666666666666657"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Azerbaijan"/>
+                                        <connections>
+                                            <action selector="azButton:" destination="Q0X-9x-xVw" eventType="touchUpInside" id="5be-vB-kqO"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RAF-dX-duC">
                                         <rect key="frame" x="0.0" y="197.33333333333331" width="361" height="48.666666666666657"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Turkey"/>
+                                        <connections>
+                                            <action selector="trButoon:" destination="Q0X-9x-xVw" eventType="touchUpInside" id="XlZ-3a-z22"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jOZ-bI-sBq">
+                                <rect key="frame" x="16" y="445" width="361" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LB5-ev-1a3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="jOZ-bI-sBq" firstAttribute="top" secondItem="cQm-s5-tGH" secondAttribute="bottom" constant="72" id="2bT-Wh-tjg"/>
                             <constraint firstItem="LB5-ev-1a3" firstAttribute="trailing" secondItem="cQm-s5-tGH" secondAttribute="trailing" constant="16" id="4bD-Py-fRs"/>
                             <constraint firstItem="cQm-s5-tGH" firstAttribute="leading" secondItem="LB5-ev-1a3" secondAttribute="leading" constant="16" id="OKN-vb-8iJ"/>
                             <constraint firstItem="cQm-s5-tGH" firstAttribute="top" secondItem="LB5-ev-1a3" secondAttribute="top" constant="24" id="Ujd-3e-lDK"/>
+                            <constraint firstItem="jOZ-bI-sBq" firstAttribute="leading" secondItem="LB5-ev-1a3" secondAttribute="leading" constant="16" id="b4Q-0e-6XL"/>
                             <constraint firstItem="LB5-ev-1a3" firstAttribute="bottom" secondItem="cQm-s5-tGH" secondAttribute="bottom" constant="396" id="kug-ed-mu4"/>
                             <constraint firstItem="cQm-s5-tGH" firstAttribute="centerX" secondItem="LB5-ev-1a3" secondAttribute="centerX" id="oCn-n9-WUP"/>
+                            <constraint firstItem="LB5-ev-1a3" firstAttribute="trailing" secondItem="jOZ-bI-sBq" secondAttribute="trailing" constant="16" id="wQd-PX-lij"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="GhW-69-liy"/>
+                    <connections>
+                        <outlet property="titleLabel" destination="jOZ-bI-sBq" id="o1c-yF-TFj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="497-r9-0Wa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -317,7 +338,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="J7a-df-aYm">
-                                <rect key="frame" x="0.0" y="83" width="393" height="43"/>
+                                <rect key="frame" x="0.0" y="83" width="392" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="392" id="B5F-wl-jPF"/>
                                     <constraint firstAttribute="height" constant="44" id="ZGp-PY-IiT"/>

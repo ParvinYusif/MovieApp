@@ -33,7 +33,7 @@ class HomeViewModel {
             if let error = error {
                 self.errorCallback?(error)
             } else if let movieData = movieData {
-                self.category.append(Category(title: category.rawValue,
+                self.category.append(Category(title: category.rawValue.localize,
                                               items: movieData.results ?? []))
                 self.succesCallBack?()
             }

@@ -22,6 +22,8 @@
 		DB2F57FE29E771BB0063D268 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2F57FD29E771BB0063D268 /* NetworkHelper.swift */; };
 		DB4DC01629E7FE1A0090E602 /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4DC01529E7FE1A0090E602 /* FavoriteViewModel.swift */; };
 		DB4DC01829E813AD0090E602 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4DC01729E813AD0090E602 /* HomeCell.swift */; };
+		DB88C9A12A00113C001788C3 /* LanguageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB88C9A02A00113C001788C3 /* LanguageController.swift */; };
+		DB88C9A32A001C11001788C3 /* String + Excition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB88C9A22A001C11001788C3 /* String + Excition.swift */; };
 		DBA9829C29F09BFC0005A855 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA9829B29F09BFC0005A855 /* People.swift */; };
 		DBA9829F29F19A440005A855 /* HomeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA9829E29F19A440005A855 /* HomeHelper.swift */; };
 		DBA982A129F19A550005A855 /* HomeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA982A029F19A550005A855 /* HomeManager.swift */; };
@@ -90,6 +92,8 @@
 		DB2F57FD29E771BB0063D268 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 		DB4DC01529E7FE1A0090E602 /* FavoriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
 		DB4DC01729E813AD0090E602 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		DB88C9A02A00113C001788C3 /* LanguageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageController.swift; sourceTree = "<group>"; };
+		DB88C9A22A001C11001788C3 /* String + Excition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Excition.swift"; sourceTree = "<group>"; };
 		DBA9829B29F09BFC0005A855 /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
 		DBA9829E29F19A440005A855 /* HomeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHelper.swift; sourceTree = "<group>"; };
 		DBA982A029F19A550005A855 /* HomeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeManager.swift; sourceTree = "<group>"; };
@@ -198,6 +202,7 @@
 				DB2F57ED29E76FE50063D268 /* Poppins-Medium.ttf */,
 				DB2F57EC29E76FE50063D268 /* Poppins-Regular.ttf */,
 				DB2F57EA29E76FE40063D268 /* Poppins-SemiBold.ttf */,
+				DB88C9A22A001C11001788C3 /* String + Excition.swift */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -308,6 +313,7 @@
 		DBEDD79D29E162DB00D9C940 = {
 			isa = PBXGroup;
 			children = (
+				DB88C9A02A00113C001788C3 /* LanguageController.swift */,
 				DBEDD7A829E162DB00D9C940 /* MovieApp */,
 				DBEDD7C229E162DD00D9C940 /* MovieAppTests */,
 				DBEDD7CC29E162DD00D9C940 /* MovieAppUITests */,
@@ -635,8 +641,10 @@
 				DBEDD7AC29E162DB00D9C940 /* SceneDelegate.swift in Sources */,
 				DB4DC01629E7FE1A0090E602 /* FavoriteViewModel.swift in Sources */,
 				DBE328CE29F0914700EBAC75 /* PeopleController.swift in Sources */,
+				DB88C9A12A00113C001788C3 /* LanguageController.swift in Sources */,
 				DBEDD7DD29E16AE000D9C940 /* Movie.swift in Sources */,
 				DBA9829C29F09BFC0005A855 /* People.swift in Sources */,
+				DB88C9A32A001C11001788C3 /* String + Excition.swift in Sources */,
 				DB2A7F0029E9DADE0026ECF5 /* ImageHelper.swift in Sources */,
 				DBE328D029F094E600EBAC75 /* PeopleViewModel.swift in Sources */,
 				DBE328CB29F04CA600EBAC75 /* TopImageButtomCell.swift in Sources */,
