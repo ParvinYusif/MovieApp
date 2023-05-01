@@ -9,6 +9,8 @@ import UIKit
 
 class HomeController: UIViewController {
     
+    @IBOutlet weak var titleLabel: UILabel!
+    
     @IBOutlet weak var collection: UICollectionView!
     
     var viewModel = HomeViewModel()
@@ -18,7 +20,7 @@ class HomeController: UIViewController {
         collection.showsVerticalScrollIndicator = false
         title = "Movie"
         configViewModel()
-        configColletion()
+        configueUI()
     }
     
     func configViewModel() {
@@ -45,8 +47,9 @@ class HomeController: UIViewController {
         
     }
     
-    func configColletion() {
-        
+    func configueUI() {
+//        navigationItem.title = NSLocalizedString("home_title", comment: "")
+        titleLabel.text = NSLocalizedString("home_title", comment: "")
     }
     
     
